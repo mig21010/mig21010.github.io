@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "work": "Experiencia"
+  },
+  "hero": {
+    "title": "Full-stack Developer",
+    "intro": "Mi objetivo es escribir código mantenible, claro y comprensible para que el desarrollo sea disfrutable.",
+    "cta": "Proyectos"
+  },
+  "about": {
+    "label": "/Sobre mí",
+    "intro": "Hola, soy Miguel Angel, full-stack developer con más de 5 años de experiencia.",
+    "skillsTitle": {
+      "frontend": "Front-end",
+      "styles": "Estilos",
+      "backend": "Back-end",
+      "devops": "DevOps"
+    },
+    "photoAlt": "Foto de Miguel Angel Escamilla"
+  },
+  "work": {
+    "title": "Experiencia",
+    "totalLabel": "Experiencia laboral",
+    "yearsMonths": "{years} años {months} meses",
+    "present": "Actual",
+    "duration": "{years}a {months}m",
+    "jobs": {
+      "job-1": { "role": "Full-stack developer | Vue & Node" },
+      "job-2": { "role": "Frontend developer | React" }
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Miguel Angel Escamilla"
+  }
+}

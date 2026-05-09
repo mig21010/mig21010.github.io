@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   future: { compatibilityVersion: 4 },
   typescript: { strict: true },
+  modules: ['@nuxtjs/i18n'],
   css: ['~/assets/scss/main.scss'],
   vite: {
     css: {
@@ -12,6 +13,15 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  i18n: {
+    strategy: 'prefix',
+    defaultLocale: 'es',
+    locales: [
+      { code: 'es', name: 'Español', file: 'es.json' },
+      { code: 'en', name: 'English', file: 'en.json' },
+    ],
+    detectBrowserLanguage: false,
   },
   app: {
     baseURL: '/',
