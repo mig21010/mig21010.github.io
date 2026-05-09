@@ -18,7 +18,7 @@ const { t } = useI18n()
           <p class="hero__intro">{{ t('hero.intro') }}</p>
         </div>
 
-        <div class="col-lg-4 text-lg-end">
+        <div class="col-lg-4 text-center text-lg-end">
           <a href="#work" class="btn-pill btn-pill--solid">
             {{ t('hero.cta') }}
             <i class="bi bi-arrow-right" aria-hidden="true" />
@@ -42,8 +42,10 @@ const { t } = useI18n()
 <style lang="scss" scoped>
 .hero {
   position: relative;
-  padding-block: 4rem;
+  padding-block: 2.5rem;
   overflow: hidden;
+
+  @media (min-width: 768px) { padding-block: 4rem; }
 
   &__particles {
     position: absolute;
