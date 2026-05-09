@@ -41,7 +41,9 @@ const { t } = useI18n()
 
 <style lang="scss" scoped>
 .about {
-  padding-block: 4rem;
+  padding-block: 2.5rem;
+
+  @media (min-width: 768px) { padding-block: 4rem; }
 
   &__intro {
     font-size: 1.125rem;
@@ -52,6 +54,12 @@ const { t } = useI18n()
     filter: grayscale(100%);
     width: 100%;
     border: 1px solid $border-subtle;
+    max-height: 60vh;
+    object-fit: cover;
+
+    @media (min-width: 992px) {
+      max-height: none;
+    }
   }
 }
 </style>
