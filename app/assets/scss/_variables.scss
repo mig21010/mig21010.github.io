@@ -1,0 +1,15 @@
+// Palette (dark theme)
+$bg-primary:    #0a0a0a;
+$bg-elevated:   #1a1a1a;
+$text-primary:  #ffffff;
+$text-muted:    #888888;
+$accent:        #ffffff;
+$border-subtle: rgba(255, 255, 255, 0.12);
+
+// Bootstrap variable overrides (these MUST be defined before Bootstrap imports)
+$body-bg:                $bg-primary;
+$body-color:             $text-primary;
+$border-radius:          1rem;
+$border-radius-lg:       2rem;
+$font-family-sans-serif: 'Inter', system-ui, -apple-system, sans-serif;
+$font-family-display:    'Archivo Black', 'Inter', sans-serif;

@@ -1,0 +1,99 @@
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid $border-subtle;
+  border-radius: 999px;
+  background: transparent;
+  color: $text-primary;
+  text-decoration: none;
+  transition: background 150ms ease, border-color 150ms ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: $text-primary;
+    color: $text-primary;
+  }
+}
+
+.btn-pill--solid {
+  background: $accent;
+  color: $bg-primary;
+
+  &:hover {
+    background: $text-primary;
+    color: $bg-primary;
+  }
+}
+
+.skill-group {
+  border: 1px solid $border-subtle;
+  border-radius: $border-radius-lg;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.02);
+
+  &__title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: $text-primary;
+  }
+
+  &__items {
+    color: $text-muted;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+.work-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid $border-subtle;
+    vertical-align: middle;
+  }
+
+  tr:last-child td { border-bottom: 1px solid $border-subtle; }
+}
+
+.work-row--highlight {
+  background: $accent;
+  color: $bg-primary;
+
+  td { color: $bg-primary; }
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid $border-subtle;
+  border-radius: 999px;
+  color: $text-primary;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: background 150ms ease;
+
+  &:hover { background: rgba(255, 255, 255, 0.08); color: $text-primary; }
+
+  i { font-size: 1rem; }
+}
+
+.lang-switcher {
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+
+  a {
+    color: $text-muted;
+    text-decoration: none;
+    line-height: 1.4;
+
+    &.active { color: $text-primary; font-weight: 600; }
+    &:hover  { color: $text-primary; }
+  }
+}

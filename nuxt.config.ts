@@ -3,6 +3,16 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   future: { compatibilityVersion: 4 },
   typescript: { strict: true },
+  css: ['~/assets/scss/main.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/variables" as *;',
+        },
+      },
+    },
+  },
   app: {
     baseURL: '/',
     head: {

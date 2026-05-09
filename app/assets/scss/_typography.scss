@@ -1,0 +1,33 @@
+:root {
+  font-family: $font-family-sans-serif;
+  color: $text-primary;
+  background: $bg-primary;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.display-hero {
+  font-family: $font-family-display;
+  font-size: clamp(3rem, 12vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+.display-section {
+  font-family: $font-family-display;
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  line-height: 0.9;
+}
+
+.section-label {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.875rem;
+  color: $text-muted;
+  letter-spacing: 0.05em;
+}
