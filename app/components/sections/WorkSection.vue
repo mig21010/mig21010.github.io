@@ -23,7 +23,7 @@ function durationFor(start: string, end: string | 'present'): string {
 <template>
   <section id="work" class="work">
     <div class="container py-5">
-      <h2 class="display-section text-end mb-4">{{ t('work.title') }}</h2>
+      <h2 class="display-section work__title mb-4">{{ t('work.title') }}</h2>
 
       <table class="work-table">
         <tbody>
@@ -48,7 +48,14 @@ function durationFor(start: string, end: string | 'present'): string {
 
 <style lang="scss" scoped>
 .work {
-  padding-block: 4rem;
+  padding-block: 2.5rem;
+
+  @media (min-width: 768px) { padding-block: 4rem; }
+
+  &__title {
+    text-align: center;
+    @media (min-width: 768px) { text-align: end; }
+  }
 
   &__total {
     color: $text-muted;
