@@ -1,4 +1,4 @@
-import type { Job } from '~/app/content/types'
+import type { Job } from '../content/types'
 
 export function calculateExperience(
   jobs: Job[],
@@ -19,6 +19,8 @@ export function calculateExperience(
 }
 
 function parseYearMonth(value: string): Date {
-  const [year, month] = value.split('-').map(Number)
+  const [yearStr, monthStr] = value.split('-')
+  const year = Number(yearStr)
+  const month = Number(monthStr)
   return new Date(year, month - 1, 1)
 }
