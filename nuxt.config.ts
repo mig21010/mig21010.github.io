@@ -23,6 +23,13 @@ export default defineNuxtConfig({
     ],
     detectBrowserLanguage: false,
   },
+  nitro: {
+    preset: 'github-pages',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+    },
+  },
   app: {
     baseURL: '/',
     head: {
