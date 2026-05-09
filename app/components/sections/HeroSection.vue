@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SocialLink from '../ui/SocialLink.vue'
+import HeroParticles from '../ui/HeroParticles.vue'
 import { socials } from '../../content/socials'
 
 const { t } = useI18n()
@@ -7,7 +8,10 @@ const { t } = useI18n()
 
 <template>
   <section class="hero">
-    <div class="container py-5">
+    <ClientOnly>
+      <HeroParticles class="hero__particles" />
+    </ClientOnly>
+    <div class="container py-5 hero__content">
       <div class="row align-items-end g-4">
         <div class="col-lg-8">
           <h1 class="display-hero mb-3">{{ t('hero.title') }}</h1>
@@ -37,7 +41,21 @@ const { t } = useI18n()
 
 <style lang="scss" scoped>
 .hero {
+  position: relative;
   padding-block: 4rem;
+  overflow: hidden;
+
+  &__particles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
 
   &__intro {
     color: $text-muted;
