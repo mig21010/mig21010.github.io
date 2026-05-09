@@ -1,7 +1,9 @@
 {
   "nav": {
     "about": "About",
-    "work": "Work"
+    "work": "Work",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "hero": {
     "title": "Full-stack Developer",

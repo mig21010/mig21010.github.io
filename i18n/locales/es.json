@@ -1,7 +1,9 @@
 {
   "nav": {
     "about": "Sobre mí",
-    "work": "Experiencia"
+    "work": "Experiencia",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
   },
   "hero": {
     "title": "Full-stack Developer",
