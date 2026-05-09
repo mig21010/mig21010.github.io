@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   },
   i18n: {
     strategy: 'prefix',
-    defaultLocale: 'es',
+    defaultLocale: 'en',
     locales: [
       { code: 'es', name: 'Español', file: 'es.json' },
       { code: 'en', name: 'English', file: 'en.json' },
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     baseURL: '/',
     head: {
       title: 'Miguel Angel Escamilla — Full-stack Developer',
-      htmlAttrs: { lang: 'es' },
+      htmlAttrs: { lang: 'en' },
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'Full-stack developer portfolio.' },

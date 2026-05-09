@@ -29,7 +29,7 @@ const { t } = useI18n()
 
         <div class="col-lg-5">
           <img
-            src="/images/photo-placeholder.svg"
+            src="/images/me.jpeg"
             :alt="t('about.photoAlt')"
             class="about__photo img-fluid rounded-4"
           />

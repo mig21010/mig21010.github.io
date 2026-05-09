@@ -12,11 +12,12 @@
   },
   "about": {
     "label": "/Sobre mí",
-    "intro": "Hola, soy Miguel Angel, full-stack developer con más de 5 años de experiencia.",
+    "intro": "Hola, soy Miguel Angel, full-stack developer con más de 8 años de experiencia, basado en Cuautitlán Izcalli, Estado de México. Estudié Informática en la Universidad Nacional Autónoma de México (UNAM). Me especializo en plataformas LMS, sistemas internos y APIs robustas con .NET y Vue, además de desarrollo móvil con Flutter. Hablo español nativo e inglés intermedio.",
     "skillsTitle": {
       "frontend": "Front-end",
       "styles": "Estilos",
       "backend": "Back-end",
+      "mobile": "Mobile",
       "devops": "DevOps"
     },
     "photoAlt": "Foto de Miguel Angel Escamilla"
@@ -28,8 +29,10 @@
     "present": "Actual",
     "duration": "{years}a {months}m",
     "jobs": {
-      "job-1": { "role": "Full-stack developer | Vue & Node" },
-      "job-2": { "role": "Frontend developer | React" }
+      "job-1": { "role": "Full-stack developer — .NET 8, C#" },
+      "job-2": { "role": "Full-stack developer — Vue & Node" },
+      "job-3": { "role": "Full-stack developer — Vue, Node & PHP" },
+      "job-4": { "role": "Full-stack developer — Vue, Node, PHP, Nuxt, WordPress" }
     }
   },
   "footer": {

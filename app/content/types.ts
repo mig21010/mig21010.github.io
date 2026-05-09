@@ -6,7 +6,7 @@ export type Social = {
 }
 
 export type SkillGroup = {
-  id: 'frontend' | 'styles' | 'backend' | 'devops'
+  id: 'frontend' | 'styles' | 'backend' | 'mobile' | 'devops'
   items: string[]
 }
 
