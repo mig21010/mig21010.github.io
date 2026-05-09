@@ -1,8 +1,9 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [main]
+  # Auto-trigger disabled while billing is locked. Re-enable by uncommenting:
+  # push:
+  #   branches: [main]
   workflow_dispatch:
 
 permissions:
