@@ -57,6 +57,24 @@
   }
 
   tr:last-child td { border-bottom: 1px solid $border-subtle; }
+
+  @media (max-width: 767.98px) {
+    &, tbody, tr, td { display: block; width: 100%; }
+    tr {
+      padding: 1rem 0;
+      border-top: 1px solid $border-subtle;
+    }
+    tr:last-child { border-bottom: 1px solid $border-subtle; }
+    td {
+      padding: 0.25rem 0;
+      border: none;
+
+      &:first-child {
+        color: $text-muted;
+        font-size: 0.875rem;
+      }
+    }
+  }
 }
 
 .work-row--highlight {
@@ -70,7 +88,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.625rem 1rem;
   border: 1px solid $border-subtle;
   border-radius: 999px;
   color: $text-primary;
@@ -92,6 +110,7 @@
     color: $text-muted;
     text-decoration: none;
     line-height: 1.4;
+    padding: 0.25rem 0.5rem;
 
     &.active { color: $text-primary; font-weight: 600; }
     &:hover  { color: $text-primary; }
