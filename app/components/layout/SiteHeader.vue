@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import LanguageSwitcher from '../ui/LanguageSwitcher.vue'
+import MobileNav from './MobileNav.vue'
 
 const { t } = useI18n()
 </script>
@@ -7,7 +8,7 @@ const { t } = useI18n()
 <template>
   <header class="site-header">
     <div class="container py-4">
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-between align-items-center gap-3">
         <div class="site-header__name">
           <strong>Miguel Angel</strong><br />Escamilla
         </div>
@@ -17,7 +18,10 @@ const { t } = useI18n()
           <a href="#work"  class="site-header__link">{{ t('nav.work') }}</a>
         </nav>
 
-        <LanguageSwitcher />
+        <div class="d-flex align-items-center gap-2">
+          <MobileNav class="d-md-none" />
+          <LanguageSwitcher />
+        </div>
       </div>
     </div>
   </header>
