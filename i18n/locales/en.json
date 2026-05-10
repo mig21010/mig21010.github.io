@@ -2,6 +2,7 @@
   "nav": {
     "about": "About",
     "work": "Work",
+    "projects": "Projects",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
@@ -21,6 +22,19 @@
       "devops": "DevOps"
     },
     "photoAlt": "Photo of Miguel Angel Escamilla"
+  },
+  "projects": {
+    "label": "/Projects",
+    "title": "Projects",
+    "viewLive": "View site",
+    "items": {
+      "360caribe": {
+        "description": "Real estate platform managing properties, features, owners, and more."
+      },
+      "legaliax": {
+        "description": "Platform with a complete library of ready-to-use legal tools and documents. Features tiered subscription plans based on document creation quotas and the number of users that can be invited."
+      }
+    }
   },
   "work": {
     "title": "Work",
