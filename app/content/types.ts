@@ -17,3 +17,12 @@ export type Job = {
   company: string
   roleKey: string
 }
+
+export type Project = {
+  id: string
+  title: string
+  image: string
+  liveUrl: string
+  tech: string[]
+  descriptionKey: string
+}
