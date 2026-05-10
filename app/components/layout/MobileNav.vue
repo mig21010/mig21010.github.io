@@ -56,8 +56,9 @@ watch(isOpen, (open) => {
         role="dialog"
         aria-modal="true"
       >
-        <a href="#about" class="mobile-nav__link" @click="close">{{ t('nav.about') }}</a>
-        <a href="#work"  class="mobile-nav__link" @click="close">{{ t('nav.work') }}</a>
+        <a href="#about"    class="mobile-nav__link" @click="close">{{ t('nav.about') }}</a>
+        <a href="#projects" class="mobile-nav__link" @click="close">{{ t('nav.projects') }}</a>
+        <a href="#work"     class="mobile-nav__link" @click="close">{{ t('nav.work') }}</a>
       </nav>
     </Teleport>
   </div>

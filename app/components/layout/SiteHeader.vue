@@ -14,8 +14,9 @@ const { t } = useI18n()
         </div>
 
         <nav class="d-none d-md-flex gap-4">
-          <a href="#about" class="site-header__link">{{ t('nav.about') }}</a>
-          <a href="#work"  class="site-header__link">{{ t('nav.work') }}</a>
+          <a href="#about"    class="site-header__link">{{ t('nav.about') }}</a>
+          <a href="#projects" class="site-header__link">{{ t('nav.projects') }}</a>
+          <a href="#work"     class="site-header__link">{{ t('nav.work') }}</a>
         </nav>
 
         <div class="d-flex align-items-center gap-2">
