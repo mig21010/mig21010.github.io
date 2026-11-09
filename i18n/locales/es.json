@@ -33,9 +33,6 @@
       "ai-agent": {
         "description": "Agente de IA empresarial construido con la API de Claude, function calling y orquestación de herramientas. Procesa lenguaje natural y ejecuta flujos de varios pasos a través de APIs en .NET 8, con memoria de conversación en SQL Server y un frontend en React + TypeScript."
       },
-      "promohabitat": {
-        "description": "Plataforma de bienes raíces con clasificación automática de documentos mediante IA y recomendaciones de financiamiento bancario basadas en análisis con LLMs."
-      },
       "360caribe": {
         "description": "Plataforma de bienes raíces que gestiona propiedades, características, propietarios y más."
       },

@@ -33,9 +33,6 @@
       "ai-agent": {
         "description": "Enterprise AI agent built on the Claude API with function calling and tool orchestration. It processes natural language and runs multi-step workflows through .NET 8 APIs, with conversation memory in SQL Server and a React + TypeScript frontend."
       },
-      "promohabitat": {
-        "description": "Real estate platform with AI-driven automatic document classification and bank financing recommendations based on LLM analysis."
-      },
       "360caribe": {
         "description": "Real estate platform managing properties, features, owners, and more."
       },

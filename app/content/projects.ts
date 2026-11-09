@@ -8,12 +8,6 @@ export const projects: Project[] = [
     descriptionKey: 'projects.items.ai-agent.description',
   },
   {
-    id: 'promohabitat',
-    title: 'Promohabitat',
-    tech: ['LLM', 'AI document classification'],
-    descriptionKey: 'projects.items.promohabitat.description',
-  },
-  {
     id: '360caribe',
     title: '360 Caribe',
     image: '/images/projects/360caribe.jpg',
