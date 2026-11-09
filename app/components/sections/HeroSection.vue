@@ -18,10 +18,14 @@ const { t } = useI18n()
           <p class="hero__intro">{{ t('hero.intro') }}</p>
         </div>
 
-        <div class="col-lg-4 text-center text-lg-end">
+        <div class="col-lg-4 d-flex flex-wrap gap-3 justify-content-center justify-content-lg-end">
           <a href="#work" class="btn-pill btn-pill--solid">
             {{ t('hero.cta') }}
             <i class="bi bi-arrow-right" aria-hidden="true" />
+          </a>
+          <a href="/cv/Miguel_Escamilla_CV_SDE.pdf" class="btn-pill" download>
+            {{ t('hero.downloadCv') }}
+            <i class="bi bi-download" aria-hidden="true" />
           </a>
         </div>
       </div>

@@ -9,17 +9,19 @@
   "hero": {
     "title": "Full-stack Developer",
     "intro": "My goal is to write maintainable, clean and understandable code so development is enjoyable.",
-    "cta": "Projects"
+    "cta": "Projects",
+    "downloadCv": "Download CV"
   },
   "about": {
     "label": "/About me",
-    "intro": "Hi, I'm Miguel Angel, a full-stack developer with more than 8 years of experience, based in Cuautitlán Izcalli, State of Mexico. I studied Computer Science at Universidad Nacional Autónoma de México (UNAM). I specialize in LMS platforms, internal systems, and robust APIs with .NET and Vue, plus mobile development with Flutter. Native Spanish, intermediate English.",
+    "intro": "Hi, I'm Miguel Angel, a full-stack developer with more than 8 years of experience, based in Cuautitlán Izcalli, State of Mexico. I studied Computer Science at Universidad Nacional Autónoma de México (UNAM). I specialize in LMS platforms, internal systems, and robust APIs with .NET and Vue, plus mobile development with Flutter. Honorable mention at the Salud Digna AI Nutrition Challenge (Talent Land Jalisco 2023), where I built an AI-powered nutrition app using OpenAI agents. Native Spanish, intermediate English.",
     "skillsTitle": {
-      "frontend": "Front-end",
-      "styles": "Styles",
       "backend": "Back-end",
-      "mobile": "Mobile",
-      "devops": "DevOps"
+      "frontend": "Front-end",
+      "ai": "AI & LLMs",
+      "devops": "Cloud & DevOps",
+      "databases": "Databases",
+      "mobile": "Mobile"
     },
     "photoAlt": "Photo of Miguel Angel Escamilla"
   },
@@ -28,6 +30,12 @@
     "title": "Projects",
     "viewLive": "View site",
     "items": {
+      "ai-agent": {
+        "description": "Enterprise AI agent built on the Claude API with function calling and tool orchestration. It processes natural language and runs multi-step workflows through .NET 8 APIs, with conversation memory in SQL Server and a React + TypeScript frontend."
+      },
+      "promohabitat": {
+        "description": "Real estate platform with AI-driven automatic document classification and bank financing recommendations based on LLM analysis."
+      },
       "360caribe": {
         "description": "Real estate platform managing properties, features, owners, and more."
       },
@@ -43,10 +51,14 @@
     "present": "Present",
     "duration": "{years}y {months}m",
     "jobs": {
-      "job-1": { "role": "Full-stack developer — .NET 8, C#" },
-      "job-2": { "role": "Full-stack developer — Vue & Node" },
-      "job-3": { "role": "Full-stack developer — Vue, Node & PHP" },
-      "job-4": { "role": "Full-stack developer — Vue, Node, PHP, Nuxt, WordPress" }
+      "chimp": {
+        "role": "Full-stack developer — agency with long-term, concurrent client engagements",
+        "clients": {
+          "sava": "Automotive — .NET 8 / C# enterprise features, financial approval workflows and an incremental data-sync architecture for a legacy Oracle system",
+          "proteccion": "Insurance — high-volume REST services (~40% faster responses) and leading the PHP → Node.js/Vue migration",
+          "growth": "Education — custom LMS, OpenAI-powered features, HubSpot integrations and a Flutter app with 1,000+ downloads"
+        }
+      }
     }
   },
   "footer": {

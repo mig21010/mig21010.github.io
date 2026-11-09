@@ -9,17 +9,19 @@
   "hero": {
     "title": "Full-stack Developer",
     "intro": "Mi objetivo es escribir código mantenible, claro y comprensible para que el desarrollo sea disfrutable.",
-    "cta": "Proyectos"
+    "cta": "Proyectos",
+    "downloadCv": "Descargar CV"
   },
   "about": {
     "label": "/Sobre mí",
-    "intro": "Hola, soy Miguel Angel, full-stack developer con más de 8 años de experiencia, basado en Cuautitlán Izcalli, Estado de México. Estudié Informática en la Universidad Nacional Autónoma de México (UNAM). Me especializo en plataformas LMS, sistemas internos y APIs robustas con .NET y Vue, además de desarrollo móvil con Flutter. Hablo español nativo e inglés intermedio.",
+    "intro": "Hola, soy Miguel Angel, full-stack developer con más de 8 años de experiencia, basado en Cuautitlán Izcalli, Estado de México. Estudié Informática en la Universidad Nacional Autónoma de México (UNAM). Me especializo en plataformas LMS, sistemas internos y APIs robustas con .NET y Vue, además de desarrollo móvil con Flutter. Obtuve mención honorífica en el Salud Digna AI Nutrition Challenge (Talent Land Jalisco 2023), donde construí una app de nutrición con agentes de OpenAI. Hablo español nativo e inglés intermedio.",
     "skillsTitle": {
-      "frontend": "Front-end",
-      "styles": "Estilos",
       "backend": "Back-end",
-      "mobile": "Mobile",
-      "devops": "DevOps"
+      "frontend": "Front-end",
+      "ai": "IA y LLMs",
+      "devops": "Cloud y DevOps",
+      "databases": "Bases de datos",
+      "mobile": "Mobile"
     },
     "photoAlt": "Foto de Miguel Angel Escamilla"
   },
@@ -28,6 +30,12 @@
     "title": "Proyectos",
     "viewLive": "Ver sitio",
     "items": {
+      "ai-agent": {
+        "description": "Agente de IA empresarial construido con la API de Claude, function calling y orquestación de herramientas. Procesa lenguaje natural y ejecuta flujos de varios pasos a través de APIs en .NET 8, con memoria de conversación en SQL Server y un frontend en React + TypeScript."
+      },
+      "promohabitat": {
+        "description": "Plataforma de bienes raíces con clasificación automática de documentos mediante IA y recomendaciones de financiamiento bancario basadas en análisis con LLMs."
+      },
       "360caribe": {
         "description": "Plataforma de bienes raíces que gestiona propiedades, características, propietarios y más."
       },
@@ -43,10 +51,14 @@
     "present": "Actual",
     "duration": "{years}a {months}m",
     "jobs": {
-      "job-1": { "role": "Full-stack developer — .NET 8, C#" },
-      "job-2": { "role": "Full-stack developer — Vue & Node" },
-      "job-3": { "role": "Full-stack developer — Vue, Node & PHP" },
-      "job-4": { "role": "Full-stack developer — Vue, Node, PHP, Nuxt, WordPress" }
+      "chimp": {
+        "role": "Full-stack developer — agencia con proyectos de largo plazo para varios clientes en paralelo",
+        "clients": {
+          "sava": "Automotriz — funcionalidades empresariales en .NET 8 / C#, flujos de aprobación financiera y una arquitectura de sincronización incremental con un sistema Oracle legado",
+          "proteccion": "Seguros — servicios REST de alto volumen (~40% menos tiempo de respuesta) y liderando la migración de PHP a Node.js/Vue",
+          "growth": "Educación — LMS a la medida, funciones con OpenAI, integraciones con HubSpot y una app en Flutter con más de 1,000 descargas"
+        }
+      }
     }
   },
   "footer": {

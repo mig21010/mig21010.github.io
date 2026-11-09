@@ -38,4 +38,13 @@ describe('ProjectCard', () => {
     expect(link.attributes('rel')).toBe('noopener noreferrer')
     expect(link.text()).toContain('projects.viewLive')
   })
+
+  it('renders a placeholder instead of an image and no link when they are missing', () => {
+    const { image, liveUrl, ...rest } = sample
+    const wrapper = mount(ProjectCard, { props: { project: rest } })
+
+    expect(wrapper.find('img').exists()).toBe(false)
+    expect(wrapper.find('.project-card__placeholder').exists()).toBe(true)
+    expect(wrapper.find('a.project-card__cta').exists()).toBe(false)
+  })
 })

@@ -11,10 +11,14 @@ defineProps<{
     <div class="row g-0 align-items-stretch">
       <div class="col-md-6 project-card__image-col">
         <img
+          v-if="project.image"
           :src="project.image"
           :alt="project.title"
           class="project-card__image"
         />
+        <div v-else class="project-card__placeholder" aria-hidden="true">
+          <i class="bi bi-code-slash" />
+        </div>
       </div>
       <div class="col-md-6 project-card__content">
         <h3 class="project-card__title">{{ project.title }}</h3>
@@ -29,6 +33,7 @@ defineProps<{
           </li>
         </ul>
         <a
+          v-if="project.liveUrl"
           class="btn-pill project-card__cta"
           :href="project.liveUrl"
           target="_blank"
@@ -62,6 +67,18 @@ defineProps<{
     height: 100%;
     object-fit: cover;
     display: block;
+  }
+
+  &__placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: $text-muted;
+    background: rgba(255, 255, 255, 0.04);
   }
 
   &__content {

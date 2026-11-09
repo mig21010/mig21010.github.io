@@ -12,6 +12,11 @@ function formatRange(start: string, end: string | 'present'): string {
   return startYear === endYear ? startYear : `${startYear} - ${endYear}`
 }
 
+function formatYearRange(startYear: number, endYear: number | 'present'): string {
+  if (endYear === 'present') return `${startYear} - ${t('work.present')}`
+  return startYear === endYear ? `${startYear}` : `${startYear} - ${endYear}`
+}
+
 function durationFor(start: string, end: string | 'present'): string {
   const single = calculateExperience(
     [{ id: 'tmp', start, end, company: '', roleKey: '' }],
@@ -27,14 +32,21 @@ function durationFor(start: string, end: string | 'present'): string {
 
       <table class="work-table">
         <tbody>
-          <tr v-for="job in jobs" :key="job.id">
-            <td>
-              <div>{{ formatRange(job.start, job.end) }}</div>
-              <small class="text-muted">{{ durationFor(job.start, job.end) }}</small>
-            </td>
-            <td>{{ job.company }}</td>
-            <td>{{ t(job.roleKey) }}</td>
-          </tr>
+          <template v-for="job in jobs" :key="job.id">
+            <tr>
+              <td>
+                <div>{{ formatRange(job.start, job.end) }}</div>
+                <small class="text-muted">{{ durationFor(job.start, job.end) }}</small>
+              </td>
+              <td>{{ job.company }}</td>
+              <td>{{ t(job.roleKey) }}</td>
+            </tr>
+            <tr v-for="client in job.clients" :key="client.id" class="work-table__client">
+              <td><small>{{ formatYearRange(client.startYear, client.endYear) }}</small></td>
+              <td>{{ client.name }}</td>
+              <td>{{ t(client.roleKey) }}</td>
+            </tr>
+          </template>
         </tbody>
       </table>
 

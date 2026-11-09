@@ -6,8 +6,16 @@ export type Social = {
 }
 
 export type SkillGroup = {
-  id: 'frontend' | 'styles' | 'backend' | 'mobile' | 'devops'
+  id: 'backend' | 'frontend' | 'ai' | 'devops' | 'databases' | 'mobile'
   items: string[]
+}
+
+export type Client = {
+  id: string
+  startYear: number
+  endYear: number | 'present'
+  name: string
+  roleKey: string
 }
 
 export type Job = {
@@ -16,13 +24,14 @@ export type Job = {
   end: string | 'present'
   company: string
   roleKey: string
+  clients?: Client[]
 }
 
 export type Project = {
   id: string
   title: string
-  image: string
-  liveUrl: string
+  image?: string
+  liveUrl?: string
   tech: string[]
   descriptionKey: string
 }

@@ -1,9 +1,16 @@
 import type { Job } from './types'
 
 export const jobs: Job[] = [
-  { id: 'job-1', start: '2025-01', end: 'present', company: 'SAVA Honda', roleKey: 'work.jobs.job-1.role' },
-  { id: 'job-2', start: '2023-06', end: '2024-12', company: 'Growth Institute', roleKey: 'work.jobs.job-2.role' },
-	{ id: 'job-3', start: '2021-01', end: '2023-12', company: 'Protección Familiar', roleKey: 'work.jobs.job-3.role' },
-	{ id: 'job-4', start: '2018-07', end: '2021-12', company: 'Chimp Web Studio', roleKey: 'work.jobs.job-4.role' },
-
+  {
+    id: 'chimp',
+    start: '2018-07',
+    end: 'present',
+    company: 'Chimp Web Studio',
+    roleKey: 'work.jobs.chimp.role',
+    clients: [
+      { id: 'sava', startYear: 2025, endYear: 'present', name: 'SAVA Honda', roleKey: 'work.jobs.chimp.clients.sava' },
+      { id: 'proteccion', startYear: 2019, endYear: 'present', name: 'Protección Familiar', roleKey: 'work.jobs.chimp.clients.proteccion' },
+      { id: 'growth', startYear: 2018, endYear: 'present', name: 'Growth Institute', roleKey: 'work.jobs.chimp.clients.growth' },
+    ],
+  },
 ]
